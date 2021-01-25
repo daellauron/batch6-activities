@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/surveryform.css">
+</head>
+<body>
+   
+<div class="form-class" >
+   
+    <h1 class="title" id="title" >Avion School Survey Form</h1><br>
+    <p><i id="description" class="description-class">Thank you for taking time to send us your feedback!</i></p>
+<!-- FORM -->
+    <form class="formclass" id="formid">
+        <img src="css/new-logo.png">
+        <label  class="label" id="name-label"></label><br>
+            <input class="inputclass" id="name"  type="text" placeholder="First and Last Name" required><br>
+
+        <label class="label" id="email-label"></label><br>
+            <input  class="inputclass" id="email" type="email" placeholder="Email Address" required><br>
+
+        <label class="label" id="number-label"><label><br>
+            <input class="inputclass" id="number"  type="text"  placeholder="Phone Number 8-11 Digits" minlength="8" maxlength="11" pattern="\d*" title="Numbers only, please." required><br>
+
+    <!-- dropdown -->
+   <label></label><br>
+            <select class="dropdownmenu" id="dropdown">
+                
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                
+            </select>
+            <br>
+            <br>
+    <!-- dropdown -->
+    <div class="radio1">
+<label>Batch Number</label><br>
+        <!-- RADIO -->
+        <input class="radio radio-btn" type="radio" id="Batch1" name="BatchNumber" value="Batch 1" required>
+        <label for="Batch1">Batch 1</label><br>
+        <input class="radio radio-btn" type="radio" id="Batch2" name="BatchNumber" value="Batch 2"required>
+        <label for="Batch2">Batch 2</label><br>
+        <input class="radio radio-btn" type="radio" id="Batch3" name="BatchNumber" value="Batch 3"required>
+        <label for="Batch3">Batch 3</label>
+        <!-- RADIO -->
+    </div>
+
+            <!-- CHECKBOX -->
+            <br>
+        <div class="checkbox">
+            <label>Choices: Lorem, ipsum.lorem2 Lorem, ipsum.</label><br>
+            <input type="checkbox" id="option1" name="option1" value="OPTION 1">
+            <label for="vehicle1">OPTION 1</label><br>
+            <input type="checkbox" id="option2" name="option2" value="OPTION 2" >
+            <label for="vehicle2">OPTION 2</label><br>
+            <input type="checkbox" id="option3" name="option3" value="OPTION 3" >
+            <label for="vehicle3">OPTION 3</label><br><br>
+  <!-- CHECKBOX -->
+</div>
+<br>
+<label for="feedback">Additional Notes:</label><br>
+<textarea name="feedback" rows="5" cols="20"></textarea><br>
+    <button class="btn btn-border-pop" id="submit" type="submit">Enter</button>
+
+    <div class="ripple-backgound" style="display: flex-box;">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circlex large shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle mediun shade4"></div>
+        <div class="circle small shade5"></div>
+    </div>
+    </form>
+<!-- FORM -->
+
+</div>  
+
+</body>
+</html>
+

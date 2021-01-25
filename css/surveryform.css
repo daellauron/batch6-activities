@@ -1,0 +1,247 @@
+body{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*  
+   padding-left: 100px;
+   padding-right: 100px;
+   align-content: center;
+   text-align: center; */
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0;
+   color:white;
+   
+}
+.form-class{
+  
+    margin: auto;
+    width: 30%;
+   
+    padding: 90px;
+   
+    align-content: center;
+    text-align: center;
+    filter: alpha(opacity=50);
+    border-radius: 10%;
+}
+/* /////////////////// */
+img{
+  width:100px;
+  height: auto;
+}
+input:invalid {
+    
+  }
+
+  input:valid {
+   
+  }
+  input:invalid:required{
+
+  }
+
+  /* ////////////////// */
+
+  .label{
+      
+       margin: auto;
+       width: 60%;
+      
+       align-content: center;
+       text-align: center;
+  }
+  .inputclass{
+      width: 100%;
+      height: auto;
+      
+  }
+
+  .dropdownmenu{
+    width: 102%;
+    height: auto;
+    cursor: pointer;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+  }
+
+  .checkbox{
+    cursor: pointer;
+      display:block;
+      justify-content: center;
+      
+     flex-wrap: wrap;
+     margin: 0;
+
+     width: 100%;
+    border: 3px solid #73AD21;
+
+      
+  }
+
+  .radio{
+    cursor: pointer;
+  }
+
+  .radio1{
+    width: 100%;
+    border: 3px solid #73AD21;
+  }
+
+  
+  button{
+    margin: 1rem;
+    
+
+  }
+  .btn{
+    background-color: var(--background-color);
+    columns: #222;
+    padding: .5em 1em;
+    border:none;
+    outline: none;
+    position: relative;
+    
+
+
+    --background-color:#E3E3E3;
+    --border-size: 2px;
+    --accent-color:#0AF;
+  }
+.btn.btn-border-pop::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ z-index: -1;
+ background-color: var(--accent-color);
+ transition: transform 200ms;
+transform: scaleX(0);
+transform-origin: left;
+}
+.btn.btn-border-pop{
+  color: color 3000ms ease-in-out;
+  z-index: 1;
+}
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before{
+  /* top: calc(var(--border-size)*-2);
+  left: calc(var(--border-size)*-2);
+  right: calc(var(--border-size)*-2);
+  bottom: calc(var(--border-size)*-2); */
+
+  transform: scaleX(1);
+  
+}
+.btn.btn-border-pop:hover,
+.btn.btn-border-pop:focus{
+  color: white;
+}
+/* .radio.radio-btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ z-index: -1;
+ border: var(--border-size) solid #73AD21;
+ 
+  transition: top, left, right, bottom, 100ms ease-in-out;
+
+}
+
+
+.radio.radio-btn:hover::before,
+.radio.radio-btn:focus::before{
+  top: calc(var(--border-size)*-2);
+  left: calc(var(--border-size)*-2);
+  right: calc(var(--border-size)*-2);
+  bottom: calc(var(--border-size)*-2);
+
+} */
+
+body{
+  background: #3399ff;
+}
+
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}

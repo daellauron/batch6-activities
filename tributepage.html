@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tributestyle.css">
+    <link rel="script" href="css/script.js">
+    <title>Tribute Page</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Chester Bennington</h1>
+          <p>“I'm strong on the outside, not all the way through. I've never been perfect, but neither have you.”<br><br><br><br><br>March 20, 1976 – July 20, 2017</p>
+          
+        </div>
+      </div>
+
+      <div class="parallax"></div>
+
+      <div class="hero-image2">
+        <div class="hero-text2">
+          <h1 style="font-size:50px; padding-right: 50px;"></h1>
+          <p style="padding-right: 50px;"><strong>Charles Bennington</strong>  was an American singer, songwriter, and occasional actor. He was best known as the lead vocalist for Linkin Park </p>
+          
+        </div>
+      </div>
+
+      <div class="parallax1"></div>
+
+      <div class="hero-image3">
+        <div class="hero-text3">
+          <h1 style="font-size:50px; padding-right: 50px;"></h1>
+          <p style="padding-left: 50px;"><strong>Charles Bennington</strong>  Bennington first gained prominence as a vocalist following the release of Linkin Park's debut album Hybrid Theory (2000), which was a worldwide commercial success. </p>
+          <p style="padding-left: 50px;">The album was certified Diamond by the Recording Industry Association of America in 2005, making it the best-selling debut album of the decade, as well as one of the few albums ever to achieve that many sales. Linkin Park's following studio albums, from Meteora (2003) to One More Light (2017), continued the band's success.</p>
+        </div>
+        
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>//Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }</script>  
+      <div class="parallax1"></div>
+      
+<!-- 
+<section class="chesterpicsection">
+    <div class="img-chester">
+        <img style="border-radius:10%;" src="css/chester1.jpg">
+        
+    </div>
+    <h1 class="chestername">Chester Bennington<br>Lorem ipsum dolor sit amet.</h1>
+   
+</section>
+<p class="chestername1">Chester Bennington Lorem ipsum dolor sit amet.</p> -->
+
+</body>
+</html>
