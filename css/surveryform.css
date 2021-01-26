@@ -5,7 +5,7 @@ body{
    padding-right: 100px;
    align-content: center;
    text-align: center; */
-
+   background: #3399ff;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -165,9 +165,6 @@ transform-origin: left;
 
 } */
 
-body{
-  background: #3399ff;
-}
 
 
 .circle{
@@ -275,8 +272,8 @@ input[type=submit] {
   margin: 8px 0;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer;}
+  
 
 input[type=submit]:hover {
   background-color: #45a049;
