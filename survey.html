@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="css/surveryform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    
 <div class="form-class" >
    
-    <h1 class="title" id="title" >Avion School Survey Form</h1><br>
-    <p><i id="description" class="description-class">Thank you for taking time to send us your feedback!</i></p>
+    
 <!-- FORM -->
     <form class="formclass" id="formid" action="answer.html">
-        <img src="css/new-logo.png">
-        <label  class="label" id="name-label"></label><br>
-            <input class="inputclass" id="name"  type="text" placeholder="First and Last Name" required><br>
+        <h1 class="title" id="title" >Avion School Survey Form</h1>
+    <p><i id="description" class="description-class">Let us know what are the things needs to be improved!</i></p>
+        <img src="css/new-logo.png"><br>
+        
+        <label  class="label" id="name-label" ></label><br>
+            <input class="inputclass" id="name"  type="text" autocomplete="off" placeholder="First and Last Name" required><br>
 
         <label class="label" id="email-label"></label><br>
-            <input  class="inputclass" id="email" type="email" placeholder="Email Address" required><br>
+            <input  class="inputclass" id="email" type="email" autocomplete="off" placeholder="Email Address" required><br>
 
         <label class="label" id="number-label"><label><br>
-            <input class="inputclass" id="number"  type="text"  placeholder="Phone Number 8-11 Digits" minlength="8" maxlength="11" pattern="\d*" title="Numbers only, please." required><br>
+            <input class="inputclass" id="number"  type="text" autocomplete="off"  placeholder="Phone Number 8-11 Digits" minlength="8" maxlength="11" pattern="\d*" title="Numbers only, please." required><br>
 
     <!-- dropdown -->
    <label></label><br>
@@ -30,13 +33,14 @@
                 
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
+                <option value="Female">Choose not to say</option>
                 
             </select>
             <br>
             <br>
     <!-- dropdown -->
     <div class="radio1">
-<label>Batch Number</label><br>
+<label><b>From which batch were you in?</b></label><br>
         <!-- RADIO -->
         <input class="radio radio-btn" type="radio" id="Batch1" name="BatchNumber" value="Batch 1" required>
         <label for="Batch1">Batch 1</label><br>
@@ -57,23 +61,67 @@
             <!-- CHECKBOX -->
             <br>
         <div class="checkbox">
-            <label>Choices: Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam.</label><br>
+            <label><b>Which of the Following path are you taking in after completing your bootcamp?</b></label><br>
             <input type="checkbox" id="option1" name="option1" value="OPTION 1">
-            <label for="vehicle1">OPTION 1</label><br>
+            <label for="vehicle1"> FRONTEND</label>
             <input type="checkbox" id="option2" name="option2" value="OPTION 2" >
-            <label for="vehicle2">OPTION 2</label><br>
+            <label for="vehicle2"> BACKEND</label>
             <input type="checkbox" id="option3" name="option3" value="OPTION 3" >
-            <label for="vehicle3">OPTION 3</label><br>
+            <label for="vehicle3"> FULLSTACK</label>
             <input type="checkbox" id="option3" name="option4" value="OPTION 4" >
-            <label for="vehicle3">OPTION 4</label><br>
+            <label for="vehicle3"> MOBILE</label>
             <input type="checkbox" id="option5" name="option5" value="OPTION 5" >
-            <label for="vehicle3">OPTION 5</label><br>
+            <label for="vehicle3">DEV OPS</label>
             <input type="checkbox" id="option6" name="option6" value="OPTION 6" >
-            <label for="vehicle3">OPTION 6</label><br>
+            <label for="vehicle3">UI/UX</label>
   <!-- CHECKBOX -->
 </div>
-<br>
-<label for="feedback"></label><br>
+<div class="radio1">
+    <label><b>Would you recommend Avion to your friends/family?</b></label><br>
+            <!-- RADIO -->
+            <input class="radio radio-btn" type="radio" id="Batch1" name="BatchNumber" value="Batch 1" required>
+            <label for="Batch1">yes</label>
+            <input class="radio radio-btn" type="radio" id="Batch2" name="BatchNumber" value="Batch 2"required>
+            <label for="Batch2">no </label><br>
+
+            
+            <!-- RADIO -->
+        </div>
+        <div class="ratings">
+            <label><strong>How easy it was to learn from the bootcamp?</strong></label>
+        <div class="rate">
+            
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+
+        <div class="ratings">
+            <label><strong>How satisfied are you in our bootcamp?</strong></label>
+        <div class="rate">
+            
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+
+<label for="feedback"></label><b>Tell us why you rated satisfied or dissatisfied?</b><br>
 <textarea class="textarea1" name="feedback" rows="5" cols="70" placeholder="Place your comments here"></textarea><br>
     <button class="btn btn-border-pop" id="submit" type="submit">Enter</button>
 
@@ -84,10 +132,13 @@
         <div class="circle mediun shade4"></div>
         <div class="circle small shade5"></div>
     </div>
+
+    
     </form>
 <!-- FORM -->
 
 </div>  
+
 
 </body>
 </html>
