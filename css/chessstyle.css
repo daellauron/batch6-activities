@@ -1,0 +1,52 @@
+
+body {
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 20px;
+  }
+  
+  
+  
+  .chessboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .whitebox {
+    width: 4vw;
+    height: 4vw;
+    background-position: center;
+    
+   
+    text-align: center;
+    font-size: 3vw;
+    border: black 1px solid;
+    
+  }
+  .whitebox:hover{
+  cursor: pointer;
+    background-color:gray;
+    color: whitesmoke;
+  }
+  .blackbox{
+    color: #ffffff;
+    width: 4vw;
+    height: 4vw;
+    background-color: black;
+    text-align: center;
+    font-size: 3vw;
+    border: black 1px solid;
+  }
+  .blackbox:hover{
+    cursor: pointer;
+      background-color:gray;
+      color: whitesmoke;
+    }
+  
