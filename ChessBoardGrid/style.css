@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  h1 {
+   display: flex;
+    font-size: 3vw;
+   
+    
+    
+  }
+  
+  .chess{
+    display: grid;
+    grid-template-columns:repeat(8,5vw);
+    grid-template-rows: repeat(8,5vw);
+    
+    width: 40vw;
+    height: 40vw;
+    text-shadow: 0.05vw 0.05vw white;
+    border-radius: 1.5%;
+  }
+  
+  .white {
+
+    background-color:#e7eae1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+   
+  }
+  .white:hover{
+    color: thistle;
+    background-color: teal;
+  }
+  .black:hover{
+    color: thistle;
+    background-color: teal;
+  }
+  .black {
+    background-color:#98999d;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+   
+  }
+  p{
+    background-color: transparent;
+  }
+  .box {
+    font-size: 3vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1vw solid #3f3b45 ;
+  }
+  
+  .container{
+    display: flex;
+  
+    
+  }
+  
+  html {
+    
+    /* max-height: 600px; */
+    
+    background-color: hsla(200,40%,30%,.4);
+    background-image:		
+      url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+      url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      /* url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'), */
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+      0 10%,
+      0 100%,
+      0 30%,
+      /* 0 80%, */
+      0 0;
+    background-size: 
+      200vw,
+      50vw,
+      50vw 50vh,
+      /* 80vw, */
+      40vw 26vw;
+    animation: 50s scrollingbg infinite linear;
+    }
+  
+  @keyframes scrollingbg {
+    100% {
+      background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        /* 1000px 100%, */
+        400px 0;
+      }
+    }

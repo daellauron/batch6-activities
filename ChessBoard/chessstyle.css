@@ -1,11 +1,11 @@
 
 body {
-    background-image:url('https://desktopwalls.net/wp-content/uploads/2014/12/Minimal%20Chess%20Pieces%20Illustration%20Desktop%20Wallpaper.jpg');
+    background-color: #d1bed3;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  font-family: monospace;
+ 
     margin: auto;
    height: 4vw;
    width: auto;
@@ -33,8 +33,8 @@ text-shadow: 0.3vw 0.3vh black;
     height: 4vw;
     color: black;
     background-position: center;
-    background-image: url('https://www.ilovewallpaper.com/images/salcombe-wood-panel-wallpaper-blue-p6737-24573_image.jpg');
-   background-color: #ffffff;
+    
+   background-color:#e7eae1;
    
    background-size: cover;
     text-align: center;
@@ -44,24 +44,25 @@ text-shadow: 0.3vw 0.3vh black;
   }
   .whitebox:hover{
   cursor: pointer;
-   
-    
+   color: white;
+   color:black;
     
   }
   .blackbox{
-   text-shadow: 5px 5px solid white;
-    background-image: url('https://cdn.shopify.com/s/files/1/0606/2893/products/NLXL_BurntWoodWallpaper_3_2048x.jpg?v=1571438854');
+   
+    
     background-size: cover;
     width: 4vw;
     height: 4vw;
-   
+   background-color: #98999d;
     text-align: center;
     font-size: 3vw;
     border: black 1px solid;
   }
   .blackbox:hover{
     cursor: pointer;
-      
+      color:black;
+     
       
     }
   
@@ -87,3 +88,4 @@ text-shadow: 0.3vw 0.3vh black;
   
 
 }
+
