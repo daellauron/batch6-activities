@@ -2,17 +2,30 @@ body {
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
   }
   
-  h1 {
+  .numbers {
    display: flex;
-    font-size: 3vw;
+    font-size: 1.4vw;
+   flex-direction: column;
    
-    
+     padding-right: 1.5vw;
+     font-family: 'Kanit', sans-serif;
+     flex-wrap: wrap;
+  }
+  .letters{
+    font-size: 1.4vw;
+    display: flex;
+ padding-left: 2vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Kanit', sans-serif;
     
   }
   
@@ -38,10 +51,12 @@ body {
   .white:hover{
     color: thistle;
     background-color: teal;
+    cursor: pointer;
   }
   .black:hover{
     color: thistle;
     background-color: teal;
+    cursor: pointer;
   }
   .black {
     background-color:#98999d;
@@ -50,9 +65,7 @@ body {
     border-radius: 5%;
    
   }
-  p{
-    background-color: transparent;
-  }
+
   .box {
     font-size: 3vw;
   
