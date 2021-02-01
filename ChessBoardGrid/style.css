@@ -33,7 +33,7 @@ body {
     display: grid;
     grid-template-columns:repeat(8,5vw);
     grid-template-rows: repeat(8,5vw);
-    
+   
     width: 40vw;
     height: 40vw;
     text-shadow: 0.05vw 0.05vw white;
@@ -46,12 +46,31 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 5%;
+    transition: transform 1s;
    
   }
   .white:hover{
     color: thistle;
     background-color: teal;
     cursor: pointer;
+  
+  }
+  .white:hover.child{
+    color: thistle;
+    background-color: teal;
+    cursor: pointer;
+   
+  }
+  .piece{
+    transition: transform ease-in 150ms;
+    font-size: 3vw;
+  }
+  .piece:hover{
+    color:black;
+    font-size: larger;
+    cursor: pointer;
+    transform: translateY(-10%);
+    
   }
   .black:hover{
     color: thistle;
