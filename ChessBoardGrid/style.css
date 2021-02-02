@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    
   }
   
   .numbers {
@@ -62,16 +63,52 @@ body {
    
   }
   .piece{
-    transition: transform ease-in 150ms;
+    
     font-size: 3vw;
   }
   .piece:hover{
     color:black;
-    font-size: larger;
-    cursor: pointer;
-    transform: translateY(-10%);
+    
+    cursor:grabbing;
+    
+    animation: moves 1s ease-out infinite;
     
   }
+  @keyframes moves{
+    0%{
+      transform: translateY(0%);
+      
+    }
+    15%{
+      transform: translateY(-3%);
+    
+    }
+    30%{
+      transform: translateY(-5%);
+      
+    }
+    45%{
+      transform: translateY(-10%);
+     
+    }
+    50%{
+      transform:translateY(-7%);
+     
+    }
+    65%{
+      transform:translateY(-5%);
+    ;
+    }
+    80%{
+      transform:translateY(-3%);
+
+    }
+    100%{
+      transform:translateY(0%);
+     
+    }
+  }
+  
   .black:hover{
     color: thistle;
     background-color: teal;
@@ -99,8 +136,8 @@ body {
   
     
   }
-  
-  /* html {
+/*   
+  html {
     
     /* max-height: 600px; */
     
