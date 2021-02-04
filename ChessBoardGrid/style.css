@@ -15,7 +15,6 @@ body {
    display: flex;
     font-size: 1.4vw;
    flex-direction: column;
-   
      padding-right: 1.5vw;
      font-family: 'Kanit', sans-serif;
      flex-wrap: wrap;
@@ -34,9 +33,6 @@ body {
     display: grid;
     grid-template-columns:repeat(8,5vw);
     grid-template-rows: repeat(8,5vw);
-   
-    width: 40vw;
-    height: 40vw;
     text-shadow: 0.05vw 0.05vw white;
     border-radius: 1.5%;
   }
