@@ -1,0 +1,26 @@
+.landing1{
+    height: 100vh;
+    width: 100%;
+     background: url('background.jpg');
+     background-size: cover;
+    justify-content: center;
+ }
+
+.subnav{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    background: black;
+    filter: opacity(85%);
+}
+
+
+
+
+#header-img1{
+    height: 20vh;
+    width: 100vw;
+}
