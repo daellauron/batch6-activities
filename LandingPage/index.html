@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingPage</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="stylelanding.css">
     <link rel="stylesheet" href="slideshow.css">
-    
+    <link rel="stylesheet" href="stylelanding1.css">
+    <link rel="stylesheet" href="main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Brawler&family=Heebo:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@500&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="form.css">
 </head>
 <body>
     
@@ -21,14 +22,15 @@
     <section class="landing">
         <header id="header">
         <nav class="topheader">
-        <img id="header-img" src="genshin_impact_logo.png" alt="logo">
+        <img id="header-img" src="genshin_impact_logo1.png" alt="logo">
         
         <ul id="nav-bar" class="nav-link" alt="nav-link">
-            <a href="index.html"><li>Home</li></a>
-            <li>Sign Up</li>
-            <li>Download</li>
+            <a href="index.html"><li class="dl1">Home</li></a>
+            <a href="index.html"><li class=></li></a>
+            <li id="myBtn"  class="dl"><strong>SignUp</strong></li>
         </ul>
     </nav>
+    <img class="arrow" src="toright.png" alt="">
 </header>
         <h2 class="bigtext">Download Now!</h2>
     </section>
@@ -36,8 +38,13 @@
 
 
 <!-- BUTTON -->
-<button id="dl-btn" class="btn btn-border-pop">Sign Up</button>
+<!-- <button id="myBtn" class="btn btn-border-pop">Sign Up</button> -->
 <!-- BUTTON -->
+<img class="dlbutton1" src="dlbutton (1).png" alt="dl1">
+<img class="dlbutton2" src="dlbutton (2).png" alt="dl2">
+<img src="dlbutton (3).png" alt="dl3" class="dlbutton3">
+<img src="dlbutton (4).png" alt="dl4" class="dlbutton4">
+
 
 <div class="slider"></div>
 
@@ -45,7 +52,7 @@
 <section class="landing1">
     <header id="header">
     <nav class="subnav">
-    <img id="header-img1" src="Version_info.png" alt="logo">
+    <img id="header-img1" src="Game_features.png" alt="logo">
     
     
 </nav>
@@ -65,29 +72,30 @@
 
     <div class="mySlides fade">
       
-      <img src="Genshin_impact_banners (1).png" style="width:100%">
+      <img class="genshinbanner1" src="Genshin_impact_banners (1).png" style="width:100%">
       <div class="text"></div>
     </div>
     
     <div class="mySlides fade">
      
-      <img src="Genshin_impact_banners (2).png" style="width:100%">
+      <img class="genshinbanner1" src="Genshin_impact_banners (2).png" style="width:100%">
       <div class="text"></div>
     </div>
     
     <div class="mySlides fade">
+    
       
-      <img src="Genshin_impact_banners (3).png" style="width:100%">
+      <img class="genshinbanner1" src="Genshin_impact_banners (3).png" style="width:100%">
       <div class="text"></div>
     </div>
     <div class="mySlides fade">
         
-        <img src="Genshin_impact_banners (4).png" style="width:100%">
+        <img class="genshinbanner1" src="Genshin_impact_banners (4).png" style="width:100%">
         <div class="text"></div>
       </div>
     
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)"><img class="prevbutton" src="toleft.png" alt=""></a>
+    <a class="next" onclick="plusSlides(1)"><img src="toright.png" class="nextbutton" alt=""></a>
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
@@ -97,12 +105,29 @@
     </div>
    
     
-   
+   <!-- THIRD LANDING -->
+    <section class="landing2">
+        
+        <header id="header">
+            
+        <nav class="subnav1">
+        <img id="header-img2" src="Version_info.png" alt="logo">
+       
+        
+    </nav>
+    <iframe id="video" class="video" width="720" height="438" src="https://www.youtube.com/embed/lMdsrZ1otlA">
+    </iframe>
+    
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mp3">
+        </audio>
+    </header>
+      
+    </section>
 
 
-
-
-
+    
+<!-- HIDE ELEMENTS -->
 
     <div class="intro">
         <div class="intro-text">
@@ -118,11 +143,65 @@
         </div>
     </div>
 
+
+    
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <!-- <h2>Lorem.</h2> -->
+    </div>
+    <form action="" id="form">
+    <div class="modal-body">
+   
+      <div class="form">
+          <input type="text" name="name" autocomplete="off" required>
+          <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+        </label>
+    
+      </div>
+
+      <div class="form">
+        <input type="text" name="name" autocomplete="off" required>
+        <label for="name" class="label-name" id="Email">
+            <span class="content-name">Email</span>
+      </label>
+  
+    </div>
+
+    <div class="form">
+        <input type="text" name="name" autocomplete="off" required>
+        <label for="name" class="label-name">
+            <span class="content-name">Name</span>
+      </label>
+  
+    </div>
+    
+    </div> 
+    <button class="submitbtn" id="submitbtn" type="submit">Enter</button>
+</form>
+
+    <div class="modal-footer">
+      <!-- <h3>Lorem, ipsum.</h3> -->
+    </div>
+  </div>
+
+</div>
+
+    <!-- END OF HIDE ELEMENTS -->
+
 <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script src="slideshow.js"></script>
     <!-- SCRIPT -->
+
+    <script src="modalscript.js"></script>
    
 </body>
 </html>

@@ -2,7 +2,9 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+ width: 60vw;
+ height: 62.25vh;
+ 
   position: absolute;
   margin: auto;
   top: 140%;
@@ -11,20 +13,51 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
+  left: -25%;
+  z-index: -1;
+  height: 1vw;
+  width: 10vw;
+  padding: 14px;
   margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+  
+  
+  
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
+ 
+}
+.prevbutton{
+  height: 3vh;
+  width: 25vw;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  width: auto;
+  padding: 14px;
+  margin-top: -22px;
+  color: white;
+  z-index: -1;
+ 
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+ 
+}
+.nextbutton{
+  height: 3vh;
+  width: 25vw;
+
 }
 
 /* Position the "next button" to the right */
@@ -35,28 +68,11 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,1);
+  animation: moves 1s ease-in infinite;
+  cursor: url('Paimon_cursors/Help_Select.cur'),auto;
 }
 
-/* Caption text */
-.text1 {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -72,6 +88,7 @@
 
 .active, .dot:hover {
   background-color: #717171;
+  cursor: url('Paimon_cursors/Help_Select.cur'),auto;
 }
 
 /* Fading animation */
@@ -95,4 +112,12 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+.genshinbanner1{
+  height: 31.25vw;
+  width: 80vw;
+  border: 1px solid rgba(29, 28, 28, 0.699);
+  border-radius: 1.5%;
 }

@@ -1,0 +1,40 @@
+.landing2{
+    height: 110vh;
+    width: 100%;
+     background: url('background2.png');
+     background-size: cover;
+     object-fit: cover;
+    justify-content: center;
+ }
+
+.subnav1{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    background: black;
+    filter: opacity(85%);
+}
+
+nav iframe{
+    filter:opacity(1);
+}
+
+
+#header-img2{
+    height: 20vh;
+    width: 100vw;
+}
+
+.video{
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+audio{
+    filter: opacity(1);
+}

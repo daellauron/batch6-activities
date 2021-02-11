@@ -1,0 +1,52 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur,
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"Alternate_Select.cur"
+"Busy.ani"
+"Diagonal_Resize_1.cur"
+"Diagonal_Resize_2.cur"
+"Handwriting.cur"
+"Help_Select.cur"
+"Horizontal_Resize.cur"
+"Link_Select.cur"
+"Location_Select.cur"
+"Move.cur"
+"Normal_Select.cur"
+"Person_Select.cur"
+"Text_Select.cur"
+"Unavailable.cur"
+"Vertical_Resize.cur"
+"Working_In_Background.ani"
+[Strings]
+CUR_DIR         = "Cursors\Paimon"
+SCHEME_NAME     = "Paimon"
+pointer		= "Normal_Select.cur"
+help		= "Help_Select.cur"
+work		= "Working_In_Background.ani"
+busy		= "Busy.ani"
+text		= "Text_Select.cur"
+hand		= "Handwriting.cur"
+unavailiable	= "Unavailable.cur"
+vert		= "Vertical_Resize.cur"
+horz		= "Horizontal_Resize.cur"
+dgn1		= "Diagonal_Resize_1.cur"
+dgn2		= "Diagonal_Resize_2.cur"
+move		= "Move.cur"
+alternate	= "Alternate_Select.cur"
+link		= "Link_Select.cur"
+person		= "Person_Select.cur"
+pin		= "Location_Select.cur"

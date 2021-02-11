@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow:visible;
+    
+}
+
+body{
+
+    cursor: url('Paimon_cursors/Link_Select.cur'),auto;
 }
 
 main{
@@ -14,13 +21,63 @@ main{
 a{
     text-decoration: none;
     color:white;
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+    
+}
+.myBtn:hover{
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+}
+.dl{
+    display: flex;
+    justify-content: center;
+padding-left: 20px;
+width:20%;
+font-size: 10px;
+border: 0.5px solid white;
+/* background: rgb(35, 136, 245); */
+color: white;
+font-weight: 500;
+height: 100%;
+filter: opacity(100%);
+cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+
+}
+
+.arrow{
+    z-index: 3;
+    height: 1vh;
+    width: 10vw;
+    position: absolute;
+    top: 4.5%;
+    left: 75.5%;
+    transform: translate(-50%,-20%);
+    animation: moves 1s ease-in infinite;
 }
 
 
-.header-img{
-    min-height: 2vh;
-    min-width: 2vh;
-}
+@keyframes moves{
+    0%{
+      transform: translateX(0%);
+      
+    }
+    25%{
+      transform: translateX(2%);
+    
+    }
+    50%{
+      transform: translateX(4%);
+      
+    }
+    75%{
+      transform: translateX(2%);
+     
+    }
+    100%{
+      transform: translateX(0%);
+     
+    }
+    
+  }
 
 .bigtext{
     position: absolute;
@@ -31,8 +88,63 @@ a{
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     color: white;
     text-shadow: 0.5vw 0.5vw 0.5vw   black;
+    
 }
 
+.dlbutton1{
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    transform: translate(-50%,-20%);
+    height: 6.5vh;
+    width: 10vw;
+}
+.dlbutton1:hover{
+    filter: opacity(85%);
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+    
+}
+
+
+.dlbutton2{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transform: translate(-50%,-20%);
+    height: 6.5vh;
+    width: 10vw;
+    
+}
+.dlbutton2:hover{
+    filter: opacity(85%);
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+}
+
+.dlbutton3{
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    transform: translate(-50%,-20%);
+    height: 6.5vh;
+    width: 10vw;
+}
+.dlbutton3:hover{
+    filter: opacity(85%);
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+}
+.dlbutton4{
+    position: absolute;
+    top: 90%;
+    left: 65%;
+    transform: translate(-50%,-20%);
+    height: 6.5vh;
+    width: 10vw;
+}
+
+.dlbutton4:hover{
+    filter: opacity(85%);
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+}
 .btn{
     position: absolute;
     top: 80%;
@@ -41,17 +153,17 @@ a{
     background-color: var(--background-color);
     
     padding: .5em 1em;
-    border:none;
-   border-radius: 5%;
-    outline: none;
+    border:1px solid black;
+   
+   
     height: 6vh;
-    width: 10vw;
+    width: 40vw;
     font-size: 1.5vw;
 
 
-    --background-color:#fdfdff;
+    --background-color:black;
     --border-size: 2px;
-    --accent-color:#0AF;
+    --accent-color:rgb(19, 28, 32);
   
 }
 
@@ -63,7 +175,7 @@ a{
     right: 0;
     bottom: 0;
    z-index: -1;
-   border-radius: 5%;
+  
    background-color: var(--accent-color);
    transition: transform 200ms;
   transform: scaleX(0);
@@ -93,6 +205,8 @@ a{
 .btn.btn-border-pop:hover,
 .btn.btn-border-pop:focus{
   color: white;
+  filter: opacity(85%);
+  cursor: url('Paimon_cursors/Help_Select.cur'),auto;
 }
 
 
@@ -111,7 +225,7 @@ a{
 .intro-text{
     color:rgb(175, 175, 175);
     font-family:  'Heebo', sans-serif; ;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .slider{
@@ -148,11 +262,12 @@ a{
  nav{
      display: flex;
      align-items: center;
+    
      justify-content: space-between;
-     min-height: 5vw;
-     min-width: 5vw;
+     min-height: 2vw;
+     min-width: 2vw;
      width: 100%;
-     height: 15vh;
+     height: 10vh;
      color: white;
      background: black;
      filter: opacity(85%);
@@ -163,13 +278,43 @@ a{
  }
  
  .nav-link li{
-     padding-left: 10vw;
+     padding-left: 5vw;
      padding-right: 5vw;
-     font-size: 1.5vw;
+     font-size: 1vw;
  
  }
 #header-img{
      padding-left: 10vh;
-     height: 15vh;
-     width: 20vw;
+     height: 13vh;
+     width: 14vw;  
  }
+ 
+#header-img:hover{
+    cursor: url('Paimon_cursors/Help_Select.cur'),auto;
+}
+
+.video{
+    height: 60vh;
+    width: 50vw;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('genshin4k.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
