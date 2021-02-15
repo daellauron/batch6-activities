@@ -38,3 +38,62 @@ nav iframe{
 audio{
     filter: opacity(1);
 }
+
+.footer{
+   display:grid;
+   grid-template-columns: 1fr 1fr 50% 1fr 1fr;
+   
+    height: 20vh;
+    width: 100%;
+    color: white;
+    background: black;
+    filter: opacity(85%);
+}
+
+.pegi{
+   visibility: hidden;
+}
+
+
+.mihoyo{
+    padding-left: 2vw;
+    height: 5vh;
+    width: 10vw;
+}
+
+.footerlogo{
+    padding-top: 1vh;
+    padding-left: 2vw;
+    height: 12vh;
+    width: 10vw;
+}
+
+.esrb{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    height: 12vh;
+    width: 10vw;
+}
+
+.footerlinks{
+  
+    font-size: 1vw;
+    
+}
+
+.footeranchor{
+    display: flex;
+   
+    
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.flinks{
+    padding-left: 1vw;
+}
+
+.copyright{
+
+ 
+}

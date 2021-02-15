@@ -1,29 +1,21 @@
-.modal-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 60vh;
-    width: 49.5vw;
-    display: flex;
-    align-items: center;
+
+
+.formbody{
     
-    flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background: lightblue; */
-
 }
-
-
 .form{
-    width: 50%;
+    width: 60%;
     position: relative;
-    height: 50px;
+    height: 120px;
   overflow: hidden;
+  
+
 }
 
 .form input{
     width: 100%;
     height: 100%;
+   font-size: 24px;
     color: #595f6e;
     padding-top: 20px;
     border: none;
@@ -34,6 +26,8 @@
     position: absolute;
     bottom: 0px;
     left: 0;
+    
+    font-size: 20px;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -44,7 +38,7 @@
 content: "";
 position: absolute;
 left: 0px;
-bottom: -1px;
+bottom: 0px;
 height: 100%;
 width: 100%;
 border-bottom: 3px solid lightblue;
@@ -61,7 +55,7 @@ transition: transform 0.3s ease;
 .form input:focus+.label-name .content-name, 
 .form input:valid + .label-name .content-name{
     transform: translateY(-150%);
-    font-size: 14px;
+    font-size: 1vh;
     color: rgb(91, 150, 168);
 }
 
@@ -69,13 +63,15 @@ transition: transform 0.3s ease;
 .form input:valid + .label-name::after{
     transform: translateX(0%);
     
-
-
 }
 
 
 .submitbtn{
     position: absolute;
-    top: 80%;
-    transform: translate(1250%);
+    top: 70%;
+    left: 20%;
+    transform: translate(300%);
+    height: 35px;
+    width: 75px;
+    font-size: 24px;
 }

@@ -22,12 +22,12 @@
     <section class="landing">
         <header id="header">
         <nav class="topheader">
-        <img id="header-img" src="genshin_impact_logo1.png" alt="logo">
+        <img class="header-img11" id="header-img" src="genshin_impact_logo1.png" alt="logo">
         
         <ul id="nav-bar" class="nav-link" alt="nav-link">
             <a href="index.html"><li class="dl1">Home</li></a>
             <a href="index.html"><li class=></li></a>
-            <li id="myBtn"  class="dl"><strong>SignUp</strong></li>
+            <li id="myBtn"  class="dl">SignUp</li>
         </ul>
     </nav>
     <img class="arrow" src="toright.png" alt="">
@@ -126,7 +126,37 @@
     </section>
 
 
-    
+   
+      <footer>
+      <nav class="footer">
+        <img class="esrb" src="esrb.png" alt="">
+        <div class="pegiwrap">
+          <img class="pegi" src="Pegi12.png" alt="">
+        </div>
+      
+      <div class="footeranchor">
+        
+      <div class="footerlinks">
+        
+        <a class="flinks" href="">Home</a>
+        <a class="flinks" href="">About</a>
+        <a class="flinks" href="">Contacts</a>
+        <a class="flinks" href="">Official</a>
+        <p class="copyright">Copyright © 2020 miHoYo All Rights Reserved</p>
+      </div>
+       
+       
+        
+       
+      </div>
+      <img class="footerlogo" src="genshin_impact_logo1.png" alt="">
+      
+      <img class="mihoyo" src="Mihoyo Title Banner.png" alt="">
+      
+
+      </nav>
+    </footer>
+      
 <!-- HIDE ELEMENTS -->
 
     <div class="intro">
@@ -152,10 +182,11 @@
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
+        <img class="modalheaderpic" src="Registration.png" alt="">
       <span class="close">&times;</span>
       <!-- <h2>Lorem.</h2> -->
     </div>
-    <form action="" id="form">
+    <form action="" id="form" class="formbody">
     <div class="modal-body">
    
       <div class="form">
@@ -167,17 +198,74 @@
       </div>
 
       <div class="form">
-        <input type="text" name="name" autocomplete="off" required>
-        <label for="name" class="label-name" id="Email">
-            <span class="content-name">Email</span>
+          <input type="email" id="Email" type="text" name="name" autocomplete="off" required>
+          <label for="name" class="label-name">
+              <span class="content-name">Email</span>
+        </label>
+    
+      </div>
+
+      
+
+    <div class="form">
+        <input type="password" name="password" autocomplete="off" required>
+        <label for="password" class="label-name">
+            <span class="content-name">Password</span>
       </label>
   
     </div>
+    
+    </div> 
+    <button onClick="modalscript.js" class="submitbtn" id="myBtn1"  type="submit">Enter</button>
+</form>
+
+    <div class="modal-footer">
+      <!-- <h3>Lorem, ipsum.</h3> -->
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+        <img class="modalheaderpic" src="Registration.png" alt="">
+      <span class="close">&times;</span>
+      <!-- <h2>Lorem.</h2> -->
+    </div>
+    <form action="" id="form" class="formbody">
+    <div class="modal-body">
+   
+      <div class="form">
+          <input type="text" name="name" autocomplete="off" required>
+          <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+        </label>
+    
+      </div>
+
+      <div class="form">
+          <input type="email" id="Email" type="text" name="name" autocomplete="off" required>
+          <label for="name" class="label-name">
+              <span class="content-name">Email</span>
+        </label>
+    
+      </div>
+
+      
 
     <div class="form">
-        <input type="text" name="name" autocomplete="off" required>
-        <label for="name" class="label-name">
-            <span class="content-name">Name</span>
+        <input type="password" name="password" autocomplete="off" required>
+        <label for="password" class="label-name">
+            <span class="content-name">Password</span>
       </label>
   
     </div>
@@ -192,6 +280,7 @@
   </div>
 
 </div>
+
 
     <!-- END OF HIDE ELEMENTS -->
 
