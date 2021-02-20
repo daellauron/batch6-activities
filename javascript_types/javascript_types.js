@@ -179,12 +179,17 @@ var victorh = prompt("Enter Victor's height in meters:  ");
 var victorm= prompt("Enter Victor's weight in kilograms: ");
 var bmiJohn= johnm/johnh*johnh;
 var bmiVictor= victorm/victorh*victorh;
-console.log("John's BMI is at"+bmiJohn);
-console.log("Victors's BMI is at"+bmiVictor);
+
 
 if(bmiJohn>bmiVictor){
-    console.log("John's bmi is greater than Victor's");
+    console.log("John's BMI is at "+bmiJohn);
+    console.log("Victors's BMI is at "+bmiVictor);
+    
+    console.log("is Victor's BMI higher than John's? False");
 }
 else{
-    console.log("Victor's bmi is greater than John's");
+    console.log("John's BMI is at "+bmiJohn);
+    console.log("Victors's BMI is at "+bmiVictor);
+    
+    console.log("is Victor's BMI higher than John's? True");
 }
